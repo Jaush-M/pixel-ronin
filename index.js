@@ -91,7 +91,7 @@ const samuraiMack = new Fighter({
       key: "D",
     },
     attack: {
-      key: " ",
+      key: { mac: " ", win: " " },
     },
   },
   attackBox: {
@@ -160,7 +160,7 @@ const kenji = new Fighter({
       key: "ArrowRight",
     },
     attack: {
-      key: "Meta",
+      key: { mac: "Meta", win: "Shift" },
     },
   },
   attackBox: {

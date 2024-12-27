@@ -90,7 +90,10 @@ function addMovement(player) {
         player.lastKey = "right";
         player.keys.right.pressed = true;
         break;
-      case player.keys.attack.key.toLowerCase():
+      case player.keys.attack.key.mac.toLowerCase():
+        if (!player.isAttacking) player.attack();
+        break;
+      case player.keys.attack.key.win.toLowerCase():
         if (!player.isAttacking) player.attack();
         break;
     }
